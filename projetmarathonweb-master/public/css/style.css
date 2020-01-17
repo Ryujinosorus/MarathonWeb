@@ -1,0 +1,1090 @@
+/* Ici, votre style sera écrit */
+
+/* ALL ****************************************************************************** */
+
+*{
+    margin: 0 auto;
+
+}
+
+body {
+    color: white;
+}
+
+body a {
+    color: white;
+}
+
+.background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#background_image{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#filtre{
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: RGBA(10,10,10,0.3);
+}
+
+#text{
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* HEADER ****************************************************************************** */
+
+.header {
+    height: 15rem;
+    text-align: justify;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header p{
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    float: left;
+    font-family: 'Monoton', cursive;
+}
+
+
+.recherche{
+    float: right;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.recherche a{
+    text-decoration: none;
+}
+
+.recherche h1{
+    margin-left: 2rem;
+    margin-top: 4rem;
+    font-size: 1rem;
+}
+
+.recherche form{
+    margin-right: 2rem;
+    margin-right: 2rem;
+}
+
+.recherche form input[type=submit]{
+    border: 0.01rem solid white;
+    border-radius: 0.3rem;
+    background: none;
+}
+
+.recherche form input[type=text]{
+    margin-left: 2rem;
+    border: 0.01rem solid white;
+    border-radius: 0.3rem;
+    background: none;
+}
+
+/* HOMEPAGE ****************************************************************************** */
+
+#slogan{
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 19rem;
+    font-size: 5.5rem;
+}
+
+#arrow{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    height: 6rem;
+    width: 6rem;
+    align-content: center;
+    margin-bottom: 13rem;
+
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+#arrow:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#slider_title{
+    margin-left: 16rem;
+    margin-bottom: 4rem;
+    font-size: 2.9rem;
+}
+
+.sliders h3{
+    margin-bottom: 11rem;
+    margin-top: 1.5rem;
+    margin-left: 94rem;
+}
+
+.sliders a{
+    text-decoration: none;
+    color: white;
+    margin-left: 3rem;
+}
+
+.first_slider h2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: none;
+    z-index: 4;
+}
+
+.first_slider > div:hover .slider_hover{
+    opacity:1;
+}
+
+.first_slider .slider_hover{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 2rem;
+}
+
+
+.first_slider{
+    width: 70vw;
+    display: flex;
+    align-content: center;
+    flex-basis: 20%;
+    justify-content: space-between;
+}
+
+
+.first_slider > div{
+    background-color: RGBA(10,10,10,0.6);
+    margin: 0;
+    width: 15rem;
+    height: 22rem;
+    position: relative;
+}
+
+.first_slider img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    position: relative;
+}
+
+.first_slider > div:hover img {
+    opacity: .4;
+}
+
+
+.second_slider h2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: none;
+    z-index: 4;
+}
+
+.second_slider > div:hover .slider_hover{
+    opacity:1;
+}
+
+
+.second_slider{
+    width: 70vw;
+    display: flex;
+    align-content: center;
+    flex-basis: 20%;
+    justify-content: space-between;
+}
+
+.second_slider .slider_hover{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 2rem;
+}
+
+
+.second_slider > div{
+    background-color: RGBA(10,10,10,0.6);
+    margin: 0;
+    width: 15rem;
+    height: 22rem;
+    position: relative;
+}
+
+.second_slider img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    position: relative;
+}
+
+.second_slider > div:hover img {
+    opacity: .4;
+}
+
+
+.third_slider{
+    width: 70vw;
+    display: flex;
+    align-content: center;
+    flex-basis: 20%;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.third_slider > div{
+    background-color: RGBA(10,10,10,0.6);
+    border-radius: 0.5rem;
+    margin: 0;
+    width: 40rem;
+    height: 22rem;
+}
+
+
+.third_slider a{
+    margin: 0;
+}
+
+/* PAGE EPISODE ****************************************************************************** */
+
+
+.presentation_ep{
+    display: flex;
+}
+
+.test_ep{
+    float: left;
+    height: 35rem;
+    width: 40rem;
+    background-color: RGBA(10,10,10,0.6);
+    margin-left: 9rem
+}
+
+.presentation_contenu_ep{
+    float: right;
+    margin-left: 5rem;
+}
+
+.presentation_contenu_ep h1{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.presentation_contenu_ep h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem
+}
+
+.presentation_contenu_ep h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.presentation_contenu_ep h4{
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.presentation_contenu_ep p{
+    margin-right: 3rem;
+    width: 65rem;
+    font-size: 1.5rem;
+}
+
+.switch_episode img{
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    width: 1.7rem;
+    height: 1.7rem;
+
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.switch_episode:hover img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.switch_episode{
+    display: flex;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 4.5rem;
+}
+
+.ep_precedent{
+    align-content: flex-start;
+}
+
+.ep_precedent{
+    align-content: flex-start;
+}
+
+
+
+
+
+/* PAGE SERIE ****************************************************************************** */
+
+
+/* PRESENTATION ***************************** */
+
+.presentation{
+    display: flex;
+}
+
+.test{
+    float: left;
+    height: 20rem;
+    width: 20rem;
+    background-color: RGBA(10,10,10,0.6);
+    margin-left: 9rem
+}
+.test img{
+    width:100%;
+}
+
+.presentation_contenu{
+    float: right;
+    margin-left: 5rem;
+}
+
+.presentation_contenu h1{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.presentation_contenu h2{
+    font-size: 2rem;
+    margin-bottom: 1rem
+}
+
+.presentation_contenu h3{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.presentation_contenu p{
+    margin-right: 3rem;
+    width: 65rem;
+    font-size: 1.5rem;
+}
+
+.presentation_arrow{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    height: 4rem;
+    width: 4rem;
+    align-content: center;
+    margin-top: 4rem;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.presentation_arrow:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* CRITIQUES **************************************** */
+
+.critique{
+    margin-top: 12rem;
+    margin-bottom: 15rem;
+    display: flex;
+    width: 80%;
+    margin-right: 7.5rem;
+}
+
+.critique_redac{
+    width: 40%;
+    float: left;
+}
+
+.critique_redac h1{
+    font-size: 2.5rem;
+    margin-bottom: 6rem;
+    text-align: center;
+
+}
+
+.critique_redac_contenu h2{
+    padding-top: 1.5rem;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+
+}
+
+.critique_redac_contenu p{
+    padding-top: 1.5rem;
+    padding-left: 2.5rem;
+    font-size: 1.3rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.critique_redac_contenu{
+}
+
+
+.critique_redac > div {
+    color:  #333;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+
+
+
+.critique_utilisateur{
+    float: right;
+    width: 60%;
+}
+.critique_utilisateur h1{
+    font-size: 2.5rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.critique_contenu h2{
+    padding-top: 1rem;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+}
+
+.critique_contenu p{
+    padding-top: 1.5rem;
+    padding-left: 2.5rem;
+    font-size: 1.1rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.critique_utilisateur > div{
+    width: 60%;
+    color:  #333;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+
+.critique_info_utilisateur{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.critique_info_utilisateur h4{
+    font-size: 1.2rem;
+}
+
+/* ECRIRE ***************************************** */
+
+.ecrire{
+    text-align: center;
+    margin-top: 10rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ecrire_flex{
+}
+
+
+#ecrire_flex_head input{
+    margin: 0;
+    width: 18.5rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+
+    background-color: white;
+    color: #333;
+    border-radius: 0.1rem;
+    border: none;
+}
+
+
+
+#ecrire_flex_head #contenu_input input[type='text']{
+    padding-bottom: 9rem;
+    padding-right: 6rem;
+}
+
+
+
+#ecrire_flex_body input{
+    margin: 0;
+    width: 30vw;
+    padding-bottom: 12rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ecrire input[type='text']{
+    background-color: white;
+    color: #333;
+    border-radius: 0.1rem;
+    border: none
+}
+
+.ecrire input[type='submit']{
+    height: 2rem;
+    width: 33.33vw;
+    background-color: #333;
+    color: white;
+
+}
+
+#ecrire_titre{
+    font-size: 2.5rem;
+    margin-bottom: 4.5rem;
+}
+
+
+/* LISTE EPISODES ********************************* */
+
+.saison{
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+#liste_episode{
+    font-size: 2.7rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.episode_slider a{
+    text-decoration: none;
+    padding-left: 0.5rem;
+}
+
+.episode_slider{
+    font-size: 1.7rem;
+    width: 60vw;
+    display: flex;
+    align-content: center;
+    flex-basis: 20%;
+    justify-content: space-between;
+}
+
+
+.episode_slider > div{
+    background-color: RGBA(10,10,10,0.5);
+    margin: 0;
+    width: 6.5rem;
+    height: 2.5rem;
+    position: relative;
+}
+
+
+.dnone {
+    display:none;
+}
+.liste_episodes{
+    margin-top: 6rem;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: space-between;
+    grid-gap: 2rem;
+}
+
+.liste_episodes img{
+    width: 15rem;
+    height: 9rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* PAGE LOGIN ******************************************************************************** */
+
+.register-center{
+    margin-left: 8rem;
+}
+
+.register-center input{
+    width: 20rem;
+}
+
+.bodylogin {
+    display:flex;
+    color: white;
+}
+
+#signup-form h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.signup{
+    margin-top: -3rem;
+}
+
+.signup a{
+    text-decoration: none;
+}
+
+
+#form_wrapper {
+    width: 900px;
+    height: 400px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0,2vw;
+    padding: 5vh 15px;
+}
+
+#form_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_left img {
+    width: 25rem;
+    height: 17rem;
+}
+
+#form_right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 10% 5%;
+}
+
+.input_container {
+    background-color:  none ;
+    border: 0.01rem solid #b5b6cf;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.input_container2 {
+    background-color:  none;
+
+    border: 0.01rem solid #b5b6cf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.input_container2:hover {
+    background-color:  none ;
+
+    border: 0.01rem solid #b5b6cf;
+}
+
+.input_container2,
+#input_submit {
+    height: 20px;
+    width: 100%;
+}
+
+.input_container:hover {
+    background-color:  none ;
+
+    border: 0.01rem solid #b5b6cf;
+}
+
+.input_container,
+#input_submit {
+    height: 60px;
+    width: 100%;
+}
+
+.input_field {
+    background-color: inherit;
+    width: 90%;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.input_field2 {
+    background-color: inherit;
+    width: 90%;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+
+#input_submit {
+    background-color: #872a95;
+    padding-left: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#input_submit:hover {
+    background-color: none;
+    cursor: pointer;
+}
+
+/* h1,
+  span {
+      text-align: center;
+  }
+  h2 {
+      text-align: center;
+      padding-bottom: 30px;
+  }
+*/
+/*
+img {
+ max-width: 100%;
+ height: auto; }*/
+
+figure {
+    margin: 0; }
+/*
+p {
+ margin-bottom: 0px;
+ font-size: 15px;
+}*/
+
+
+.bodyaccount_container {
+    width: 660px;
+    position: relative;
+    margin: 0 auto; }
+
+.bodyaccount{
+    margin-top: 5rem;
+    color: white;
+}
+
+.position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+
+
+
+.form-group {
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-left: 25px;}
+
+
+.form-submit {
+    width: 100%;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    background-color: #872a95;
+}
+
+
+.loginhere {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 41px;
+    margin-bottom: 5px; }
+
+#signup-form{
+}
+
+#inscription{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 6rem;
+}
+
+#inscription a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* UTILISATEUR  + STATS ***************************************************** */
+
+.presentation_utilisateur{
+    display: flex;
+    margin-top: 7rem;
+    margin-left: 22rem;
+    margin-bottom: 15rem;
+    margin-right: 8rem;
+}
+
+.presentation_utilisateur img{
+    height: 15rem;
+    width: 15rem;
+    border: 0.5rem solid white;
+    border-radius: 50%;
+}
+
+.presentation_utilisateur h1{
+    margin-top: 1rem;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.presentation_utilisateur p{
+    font-size: 1.8rem;
+}
+
+#img_flex_utilisateur{
+    margin: 0;
+}
+
+#info_flex_utilisateur{
+    margin: 0;
+    margin-left: 5rem;
+    margin-right: 4rem;
+
+
+}
+
+.utilisateur_arrow{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10rem;
+    height: 4rem;
+    width: 4rem;
+    align-content: center;
+
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.utilisateur_arrow:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.progression {
+    width: 65vw;
+    display: flex;
+    margin-bottom: 12rem;
+    margin-left: auto;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.progression > div {
+    flex: 0 1 32%;
+}
+
+.progression h2{
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem;
+}
+
+.progression progress{
+    margin-bottom: 6rem;
+}
+
+
+.visionage{
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+#heures_num{
+    font-size: 7rem;
+    text-decoration: none;
+    font-family: 'Monoton', cursive;
+}
+
+#heures{
+    font-family: 'Dosis', sans-serif;
+    margin-left: 1.5rem;
+    font-size: 3rem;
+}
+.visionage p{
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+}
+
+
+
+#title_user_critic{
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+.critique_utilisateur_div {
+    margin-bottom: 10rem;
+
+}
+
+.critique_utilisateur_div .critique_contenu{
+    width: 40%;
+    color:  #333;
+    margin-bottom:5rem;
+    background-color: white;
+}
+
+
+.nom_serie_critique_utilisateur h{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.nom_serie_critique_utilisateur{
+    background-color: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+/* LISTE SERIES ******************************************************************************************/
+
+.liste_series{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: space-between;
+    grid-gap: 2rem;
+}
+
+.liste_series img{
+    width: 20rem;
+    height: 25rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* ERROR ************************************************************************************************ */
+
+
+#error_image{
+    margin: 0;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35rem;
+    height: 20rem;
+}
+
+
+
+/* EDIT ************************************************************************************************** */
+
+
+.edit{
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 17rem;
+}
+
+.edit_flex{
+}
+
+#edit_flex_head input{
+    margin: 0;
+    width: 12rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+#edit_flex_body input{
+    margin: 0;
+    width: 30vw;
+    padding-bottom: 12rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.edit input[type='text']{
+    background-color: white;
+    color: #333;
+    border-radius: 0.1rem;
+    border: none
+}
+
+.edit input[type='submit']{
+    height: 2rem;
+    width: 16.5vw;
+    background-color: #333;
+    color: white;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem
+
+}
+
+#edit_titre{
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
